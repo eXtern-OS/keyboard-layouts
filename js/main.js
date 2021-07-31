@@ -19,12 +19,14 @@ var t,
 		});
 		
         // sort select options by language name, not
-		/*layouts.sort( function( a, b ) {
+		layouts.sort( function( a, b ) {
 			return a[1] > b[1] ? 1 : a[1] < b[1] ? -1 : 0;
 		});
 		$.each(layouts, function(i, l){
 			o += '<option value="' + l[0] + '">' + l[1] + '</option>';
-		});*/
+		});
+
+        win.layouts = layouts;
 
         console.log("layouts: ",layouts);
 
